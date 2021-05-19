@@ -4,7 +4,7 @@ const path = require('path');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
-const Employee = require('./lib/Employee');
+const generateHTML = require('./src/generateHTML');
 const team = [];
 
 
@@ -63,7 +63,8 @@ function makeManager () {
             }
         }
     ])
-    .then ((manager) => {
+    .then ((data) => {
+        const manager = new Manager(data.manName, data.manId, data.manEmail, data.offNumber);
         team.push(manager);
         add();
     })
@@ -87,8 +88,8 @@ async function add () {
             makeIntern();
             break;
         default:
-            console.log(team);
-            // makeTeam(team);
+            // console.log(team);
+            makeTeam(team);
     }
 }
 
@@ -147,7 +148,8 @@ function makeEngineer () {
             }
         }
     ])
-    .then ((engineer) => {
+    .then ((data) => {
+        const engineer = new Engineer(data.engName, data.engId, data.engEmail, data.github);
         team.push(engineer);
         add();
     })
@@ -208,11 +210,22 @@ function makeIntern () {
             }
         }
     ])
-    .then ((intern) => {
+    .then ((data) => {
+        const intern = new Intern(data.intName, data.intId, data.intEmail, data.school);
         team.push(intern);
         add();
     })
 }
 
+function createFile(filename, data) {
+    fs.writeFile(path.join(__dirname, 'dist', filename), data, err => {
+        console.log(err);
+    })
+}
+
+function makeTeam(response) {
+    createFile('team.html', generateHTML(response));
+    console.log('Team has been created check out team.html file!');
+}
 
 makeManager();

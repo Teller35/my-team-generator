@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Teller35/my-team-generator#readme",
   "dependencies": {
+    "bootstrap": "^5.0.1",
     "inquirer": "^8.0.0",
     "jest": "^26.6.3"
   }
