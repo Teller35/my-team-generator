@@ -1,5 +1,5 @@
 const index = require('../index');
-const bootstrap = require('bootstrap');
+// const bootstrap = require('bootstrap');
 
 let teamFinal = [];
 
@@ -52,9 +52,9 @@ function managerLayout(employee) {
         <h4>Manager</h4>
         </div>
         <div>
-        <span>Id Number: ${employee.id}</span>
-        <span>Email:<a href='mailto:${employee.email}'>${employee.email}</a></span>
-        <span>Office Number: ${employee.offNumber}</span>
+        <div>Id Number: ${employee.id}</div>
+        <div>Email:<a href='mailto:${employee.email}'>${employee.email}</a></div>
+        <div>Office Number: ${employee.offNumber}</div>
         </div>
         </section>
         `
@@ -72,9 +72,9 @@ function engineerLayout(employee) {
         <h4>Engineer</h4>
         </div>
         <div>
-        <span>Id Number: ${employee.id}</span>
-        <span>Email:<a href='mailto:${employee.email}'>${employee.email}</a></span>
-        <span><a href='https://github.com/${employee.github}' target='_blank'>GitHub</a></span>
+        <div>Id Number: ${employee.id}</div>
+        <div>Email: <a href='mailto:${employee.email}'>${employee.email}</a></div>
+        <div><a href='https://github.com/${employee.github}' target='_blank'>GitHub</a></div>
         </div>
         </section>
         `
@@ -92,9 +92,9 @@ function internLayout(employee) {
         <h4>Intern</h4>
         </div>
         <div>
-        <span>Id Number: ${employee.id}</span>
-        <span>Email:<a href='mailto:${employee.email}'>${employee.email}</a></span>
-        <span>School: ${employee.school}</span>
+        <div>Id Number: ${employee.id}</div>
+        <div>Email:<a href='mailto:${employee.email}'>${employee.email}</a></div>
+        <div>School: ${employee.school}</div>
         </div>
         </section>
         `
