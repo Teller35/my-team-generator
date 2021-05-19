@@ -63,7 +63,8 @@ function makeManager () {
             }
         }
     ])
-    .then (() => {
+    .then ((manager) => {
+        team.push(manager);
         add();
     })
 }
@@ -146,7 +147,8 @@ function makeEngineer () {
             }
         }
     ])
-    .then (() => {
+    .then ((engineer) => {
+        team.push(engineer);
         add();
     })
 }
@@ -196,8 +198,8 @@ function makeIntern () {
             type: 'input',
             name: 'school',
             message: 'Please enter a school name for intern!',
-            validate: githubInput => {
-                if (githubInput) {
+            validate: schoolInput => {
+                if (schoolInput) {
                     return true;
                 }
                 else {
@@ -206,7 +208,8 @@ function makeIntern () {
             }
         }
     ])
-    .then (() => {
+    .then ((intern) => {
+        team.push(intern);
         add();
     })
 }
