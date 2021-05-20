@@ -4,7 +4,7 @@
 
   ## Description:
   #### *An app that takes a users input to make a list of all employees with contact links*
-  *[View Project on GitHub](https://github.com/my-team-generator)*
+  *[View Project on GitHub](https://github.com/teller35/my-team-generator)*
 
   ## Table of Contents:
   * [**Installation**](#installation)
