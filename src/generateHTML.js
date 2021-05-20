@@ -1,5 +1,4 @@
 const index = require('../index');
-// const bootstrap = require('bootstrap');
 
 let teamFinal = [];
 
@@ -73,7 +72,7 @@ function engineerLayout(employee) {
         <h3 class="card-title fs-1"><i class="bi bi-person-circle"></i>${employee.name}</h3>
         <h4 class="card-subtitle fs-3"><i class="bi bi-cpu-fill"></i>Engineer</h4>
         <div class="card-text bg-info fs-4">Id Number: <i class="bi bi-hash"></i>${employee.id}</div>
-        <div class="card-text bg-info fs-4"><i class="bi bi-envelope-fill"></i>Email: <a class="text-decoration-none link-dark" href='mailto:${employee.email}'></a>${employee.name}</div>
+        <div class="card-text bg-info fs-4"><i class="bi bi-envelope-fill"></i>Email: <a class="text-decoration-none link-dark" href='mailto:${employee.email}'>${employee.name}</a></div>
         <div class="card-text bg-info fs-4"><a class="text-decoration-none link-dark" href='https://github.com/${employee.github}' target='_blank'><i class="bi bi-github"></i>GitHub</a></div>
         </div>
         </div>
