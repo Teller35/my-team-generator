@@ -25,6 +25,11 @@
   ## Usage
   #### *In the root file in your terminal type 'node index.js' answer the questions and add employees. When finished take a look at the created HTML file in your browser.*
 
+  ## Sample Screenshots
+![image](https://user-images.githubusercontent.com/79383305/119034553-b688f400-b96b-11eb-83fb-1d4f121c3306.png)
+![image](https://user-images.githubusercontent.com/79383305/119034581-bbe63e80-b96b-11eb-9abf-d253606e1483.png)
+![image](https://user-images.githubusercontent.com/79383305/119034633-c9032d80-b96b-11eb-9d27-131699c687b2.png)
+
   ## Credits
   #### *NONE*
 
