@@ -11,6 +11,7 @@
   ## Table of Contents:
   * [**Installation**](#installation)
   * [**Usage**](#usage)
+  * [**Sample Screenshots**](#sample-screenshots)
   * [**Credits**](#credits)
   * [**License**](#license)
   * [**Contribute**](#contribute)
